@@ -1,0 +1,64 @@
+.input {
+    background-color: $bg-primary;
+    font-size: 1.5rem;
+    color: $text-primary;
+    padding: 1.25rem;
+    border-radius: 1rem;
+    &_type {
+        &_text {
+            border: 0.125rem solid $border-primary-transparent-6;
+            &:hover {
+                border-color: $border-primary-transparent-15;
+            }
+            &:focus {
+                border-color: $border-accent;
+            }
+            &:disabled {
+                border-color: $border-primary-transparent-3;
+                color: $text-primary-transparent-15;
+            }
+        }
+        &_search {
+            border: 0.125rem solid $border-accent;
+            display: flex;
+            align-items: center;
+            input {
+                width: 100%;
+            }
+            &::after {
+                content: '';
+                width: 2rem;
+                height: 2rem;
+                display: block;
+                background-image: url('/src/images/search.svg');
+                background-repeat: no-repeat;
+                background-size: contain;
+                opacity: .6;
+            }
+            &:hover {
+                border-color: $border-accent-subdued-15;
+            }
+            &:focus {
+                border-color: $border-accent;
+                &::after {
+                    opacity: 1;
+                }
+            }
+            &:disabled {
+                border-color: $border-primary-transparent-3;
+                color: $text-primary-transparent-15;
+            }
+        }
+    }
+    &_state {
+        &_wrong {
+            border: 0.125rem solid $border-subaccent;
+        }
+    }
+}
+
+input {
+    &::placeholder {
+        color: $text-primary-transparent-30;
+    }
+}

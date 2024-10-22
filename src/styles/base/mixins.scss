@@ -1,0 +1,16 @@
+@mixin grid($column, $gap) {
+    display: grid;
+    grid-template-columns: repeat($column, minmax(0, 1fr));
+    gap: $gap;
+}
+
+@mixin image_settings($type) {
+    width: 100%;
+    height: 100%;
+    object-fit: $type;
+}
+
+@mixin df_fdc {
+    display: flex;
+    flex-direction: column;
+}

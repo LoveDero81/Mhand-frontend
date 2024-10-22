@@ -1,0 +1,137 @@
+$bg-primary: #FFFFFF;
+$bg-accent: #FFE600;
+$bg-subaccent: #ED1C24;
+$bg-inverse: #383838;
+$bg-system: #0BD20B;
+
+$bg-inverse-subdued-3: #38383808;
+$bg-inverse-transparent-60: #38383899;
+$bg-inverse-transparent-30: #3838384D;
+$bg-inverse-transparent-15: #38383826;
+$bg-inverse-transparent-6-d: hsla(0, 0%, 22%, 0.059);
+$bg-inverse-transparent-6: #3838380F;
+$bg-inverse-transparent-3: #38383808;
+$bg-subaccent-transparent-6: #ED1C240F;
+$bg-system-transparent-6: #0BD20B0F;
+
+$bg-accent-subdued-6-h: color-mix(in srgb, #FFE600, #3838380F);
+$bg-accent-subdued-6: #F3DC03;
+$bg-accent-transparent-30: color-mix(in srgb, #FFE6004D, #3838380F);
+
+$text-primary: #383838;
+$text-accent: #FFE600;
+$text-subaccent: #ED1C24;
+$text-inverse: #FFFFFF;
+
+$text-primary-transparent-60: #38383899;
+$text-primary-transparent-30: #3838384D;
+$text-primary-transparent-15-d: #38383826;
+$text-primary-transparent-15: #38383826;
+
+$text-accent-subdued-15: color-mix(in srgb, #FFE600, #38383826);
+
+$icon-primary: #383838;
+$icon-accent: #FFE600;
+$icon-subaccent: #ED1C24;
+$icon-inverse: #FFFFFF;
+$icon-system: #0BD20B;
+
+$icon-primary-transparent-60: #38383899;
+$icon-primary-transparent-30: #3838384D;
+$icon-primary-transparent-15-d: #38383826;
+
+$border-primary: #383838;
+$border-accent: #FFE600;
+$border-subaccent: #ED1C24;
+$border-inverse: #FFFFFF;
+$border-system: #FFFFFF;
+
+$border-primary-transparent-15-h: #38383826;
+$border-primary-transparent-15: #38383826;
+$border-primary-transparent-6-s: #3838380F;
+$border-primary-transparent-6: #3838380F;
+$border-primary-transparent-3-d: #38383808;
+$border-primary-transparent-3: #38383808;
+
+$border-accent-subdued-15-h: color-mix(in srgb, #FFE600, #38383826);
+$border-accent-subdued-15: #E1CC08;
+
+@mixin heading_1 {
+    font-size: 4.5rem;
+    font-weight: 500;
+    line-height: 110%;
+    letter-spacing: -0.003em;
+    @include mobile {
+        font-size: 3.5rem;
+    }
+}
+
+@mixin heading_2 {
+    font-size: 3.5rem;
+    font-weight: 500;
+    line-height: 110%;
+    letter-spacing: -0.003em;
+    @include mobile {
+        font-size: 2.5rem;
+    }
+}
+
+@mixin heading_3 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 115%;
+    letter-spacing: -0.003em;
+    @include mobile {
+        font-size: 2rem;
+    }
+}
+
+@mixin text_1 {
+    font-size: 1.75rem;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: -0.002em;
+    @include mobile {
+        font-size: 1.5rem;
+    }
+}
+
+@mixin text_2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: -0.002em;
+    @include mobile {
+        font-size: 1.25rem;
+    }
+}
+
+@mixin text_3 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: -0.001em;
+    @include mobile {
+        font-size: 1rem;
+    }
+}
+
+@mixin button_1 {
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 130%;
+    letter-spacing: -0.003em;
+    @include mobile {
+        font-size: 1.5rem;
+    }
+}
+
+@mixin button_2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 130%;
+    letter-spacing: -0.002em;
+    @include mobile {
+        font-size: 1.25rem;
+    }
+}

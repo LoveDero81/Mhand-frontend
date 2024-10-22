@@ -1,0 +1,88 @@
+.button {
+    border-radius: 1rem;
+    outline: none;
+    border: none;
+    text-align: center;
+    @include mobile {
+        border-radius: 0.75rem;
+    }
+    &_size {
+        &_large {
+            padding: 1.75rem 2.5rem;
+            @include button_1;
+            @include mobile {
+                padding: 1.25rem 2rem;
+            }
+        }
+        &_basic {
+            padding: 1.25rem 1.75rem;
+            @include button_2;
+            @include mobile {
+                padding: 1rem 1.25rem;
+            }
+        }
+        &_small {
+            padding: 0.5rem 1rem;
+            @include button_2;
+            @include mobile {
+                padding: 0.25rem 0.75rem;
+            }
+        }
+    }
+    &_style {
+        &_accent {
+            background-color: $bg-accent;
+            &:hover {
+                background-color: $bg-accent-subdued-6;
+            }
+            &:active {
+                background-color: $bg-inverse;
+                color: $text-inverse;
+            }
+            &:disabled {
+                background-color: $bg-inverse-transparent-6;
+                color: $text-primary-transparent-15;
+            }
+        }
+        &_wrong {
+            background-color: $bg-subaccent;
+            color: $text-inverse;
+            &:hover, &:active {
+                background-color: $bg-inverse;
+                color: $text-inverse;
+            }
+            &:disabled {
+                background-color: $bg-inverse-transparent-6;
+                color: $text-primary-transparent-15;
+            }
+        }
+        &_outline {
+            background-color: $bg-primary;
+            border: 0.125rem solid $border-primary-transparent-6;
+            &:hover {
+                border-color: $border-primary-transparent-15;
+            }
+            &:active {
+                border-color: $border-accent;
+            }
+            &:disabled {
+                border-color: $border-primary-transparent-3;
+                color: $text-primary-transparent-15;
+            }
+        }
+        &_ghost {
+            background: none;
+            &:hover {
+                background-color: $bg-inverse-transparent-6;
+            }
+            &:active {
+                background-color: $bg-inverse;
+                color: $text-inverse;
+            }
+            &:disabled {
+                background-color: $border-primary-transparent-3;
+                color: $text-primary-transparent-15;
+            }
+        }
+    }
+}

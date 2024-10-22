@@ -1,0 +1,52 @@
+.radio-block {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: fit-content;
+    &:hover {
+        .radio {
+            input[type="radio"] {
+                & + div {
+                    background-color: $bg-inverse-transparent-15;
+                    position: relative;
+                    &::before {
+                        background-color: $bg-inverse-transparent-30;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+    .radio {
+        input[type="radio"] {
+            display: none;
+            & + div {
+                width: 1.5rem;
+                height: 1.5rem;
+                display: block;
+                background-color: $bg-inverse-transparent-6;
+                border-radius: 100%;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    display: block;
+                    width: 0.667rem;
+                    height: 0.667rem;
+                    border-radius: 100%;
+                    background-color: $bg-inverse;
+                    transform: translate(-50%, -50%);
+                    opacity: 0;
+                }
+            }
+            &:checked + div {
+                background-color: $bg-accent;
+                position: relative;
+                &::before {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
