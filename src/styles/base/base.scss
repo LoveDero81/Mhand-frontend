@@ -58,3 +58,10 @@ input {
     border: none;
     outline: none;
 }
+.swiper-pagination{
+    bottom: 1.75rem!important;
+    display: flex;
+    &-bullet{
+        flex: 1;
+    }
+}

@@ -28,6 +28,17 @@
                 padding: 0.25rem 0.75rem;
             }
         }
+        &_icon{
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+                @include image_settings(contain);
+                width: 2.5rem;
+                height: 2.5rem;
+            }
+        }
     }
     &_style {
         &_accent {

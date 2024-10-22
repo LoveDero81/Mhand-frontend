@@ -4,11 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="../src/styles/main.css">
+
 </head>
 <body>
     <div class="product-card">
-        <div class="product-card__images"><img src="" alt=""></div>
+        <div class="product-card__images">
+            <div class="swiper productGallerySlider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="https://static.tildacdn.com/tild6132-6537-4131-a632-333830346130/horus_TS_ALLCAts.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="https://sun9-23.userapi.com/impg/c853424/v853424354/1ac334/9IMxwJuJhfw.jpg?size=600x743&quality=96&sign=2a5874e7f3bfacb1d873841a1f96983a&c_uniq_tag=GlrC5I031LnA8wXHQ-GOSyrgW3orWrL9AeDaRhQWL3w&type=album" alt=""></div>
+                  <div class="swiper-slide"><img src="https://sun9-67.userapi.com/impf/c844618/v844618874/11fa8a/1E6-Wh36xYw.jpg?size=604x604&quality=96&sign=1af8c43fbf7fe1ae57a879ad25959cda&type=album" alt=""></div>
+                  <div class="swiper-slide"><img src="https://sun9-66.userapi.com/impg/kvORphTQYadZs370BG65lQsT3DUcLSAwX7CT2Q/3tZNmLCRksY.jpg?size=595x595&quality=96&sign=05cab8c21d4c39d64cd3006c5c5dffc4&c_uniq_tag=RuHGXANDmPH0718hg5vlcxJpo5okKlRBej7RUMiZpdM&type=album" alt=""></div>
+                  <div class="swiper-slide"><img src="https://misterbant.ru/wp-content/gallery/futbolki-leningrad/7092.png" alt=""></div>
+                  <div class="swiper-slide">Slide 6</div>
+                  <div class="swiper-slide">Slide 7</div>
+                  <div class="swiper-slide">Slide 8</div>
+                  <div class="swiper-slide">Slide 9</div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+        </div>
         <div class="product-card__information">
             <div class="product-card__information__price-block">
                 <div class="product-card__information__price-block__price">7 010 ₽</div>
@@ -34,7 +51,10 @@
             </div>
         </div>
         <div class="product-card__buttons">
-            <button class="button button_size_basic button_style_accent">Купить</button>
+            <button class="button button_size_basic button_style_accent buy">Купить</button>
+            <button class="button button_size_icon button_style_outline">
+                <img src="../src/images/heart.svg" alt="">
+            </button>
         </div>
     </div>
 
@@ -60,5 +80,7 @@
     <div class="input input_type_search input_state_static">
         <input type="text">
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script  type="module" src="../src/scripts/app.js"></script>
 </body>
 </html>
