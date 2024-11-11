@@ -21,16 +21,17 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Golos Text", sans-serif;
+    background-color: $bg-inverse-subdued-3;
 }
 
-main {
-    max-width: 1921px;
-    margin: 0 auto;
-    @include desktop {
-        margin: 0;
-        max-width: none;
-    }
-}
+// main {
+//     max-width: 1921px;
+//     margin: 0 auto;
+//     @include desktop {
+//         margin: 0;
+//         max-width: none;
+//     }
+// }
 
 hr {
     margin: 0;
@@ -58,10 +59,30 @@ input {
     border: none;
     outline: none;
 }
-.swiper-pagination{
+
+.swiper-pagination {
     bottom: 1.75rem!important;
     display: flex;
-    &-bullet{
+    gap: 0.333rem;
+    padding: 0 1.75rem;
+    &-bullet {
         flex: 1;
+        border-radius: 0;
+        height: 0.125rem;
+        margin: 0!important;
+        background: $bg-inverse-transparent-15;
+        opacity: 1;
+        &-active {
+            background: $bg-inverse;
+        }
+    }
+}
+
+.pv{
+    &-30{
+        padding: 2.5rem 0;
+    }
+    &-60{
+        padding: 5rem 0;
     }
 }

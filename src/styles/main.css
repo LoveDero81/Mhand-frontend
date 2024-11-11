@@ -26,17 +26,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Golos Text", sans-serif;
-}
-
-main {
-  max-width: 1921px;
-  margin: 0 auto;
-}
-@media (max-width: 1920px) {
-  main {
-    margin: 0;
-    max-width: none;
-  }
+  background-color: rgba(56, 56, 56, 0.031372549);
 }
 
 hr {
@@ -69,9 +59,26 @@ input {
 .swiper-pagination {
   bottom: 1.75rem !important;
   display: flex;
+  gap: 0.333rem;
+  padding: 0 1.75rem;
 }
 .swiper-pagination-bullet {
   flex: 1;
+  border-radius: 0;
+  height: 0.125rem;
+  margin: 0 !important;
+  background: rgba(56, 56, 56, 0.1490196078);
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  background: #383838;
+}
+
+.pv-30 {
+  padding: 2.5rem 0;
+}
+.pv-60 {
+  padding: 5rem 0;
 }
 
 .container {
@@ -95,13 +102,13 @@ input {
   display: flex;
   flex-direction: column;
   gap: 1.75rem;
-  width: 330px;
   transition: all 0.3s;
+  height: fit-content;
 }
 .product-card:hover {
   padding: 0.5rem;
   margin-bottom: -10rem;
-  transform: translateY(-7rem);
+  transform: translateY(-2rem);
   box-shadow: 0px 0px 9px 0px rgba(56, 56, 26, 0.2);
 }
 .product-card:hover .product-card__buttons {
@@ -111,7 +118,7 @@ input {
 }
 .product-card__images {
   position: relative;
-  background-color: #FFFFFF;
+  background-color: rgba(56, 56, 56, 0.031372549);
   border-radius: 1rem;
   overflow: hidden;
 }
@@ -138,14 +145,14 @@ input {
 }
 .product-card__information {
   padding: 0 1.75rem;
-  display: flex;
   flex-direction: column;
+  display: flex;
   gap: 1rem;
 }
 .product-card__information__price-block {
   display: flex;
-  align-items: center;
   gap: 1rem;
+  align-items: center;
 }
 .product-card__information__price-block__price {
   font-size: 1.75rem;
@@ -159,12 +166,12 @@ input {
   }
 }
 .product-card__information__price-block__cashback {
-  background-color: rgba(11, 210, 11, 0.0588235294);
-  padding: 0.25rem 0.5rem;
-  border-radius: 1000rem;
   display: flex;
   align-items: center;
   gap: 0.25rem;
+  background-color: rgba(11, 210, 11, 0.0588235294);
+  padding: 0.25rem 0.5rem;
+  border-radius: 1000rem;
 }
 .product-card__information__price-block__cashback img {
   width: 100%;
@@ -227,13 +234,13 @@ input {
 }
 .product-card__information__add {
   display: flex;
-  gap: 1rem;
   align-items: center;
+  gap: 1rem;
 }
 .product-card__information__add__img-name {
   display: flex;
-  gap: 0.5rem;
   align-items: center;
+  gap: 0.5rem;
 }
 .product-card__information__add__img-name img {
   width: 100%;
@@ -256,10 +263,11 @@ input {
 }
 .product-card__buttons {
   display: flex;
-  gap: 0 1.75rem;
+  gap: 1rem;
+  padding: 0 1.75rem;
   visibility: hidden;
   max-height: 0;
-  overflow: 0;
+  overflow: hidden;
   opacity: 0;
   transition: all 0.3s;
 }
@@ -544,6 +552,184 @@ input {
 
 input::placeholder {
   color: rgba(56, 56, 56, 0.3019607843);
+}
+
+.header-section__info-block {
+  grid-column: span 5;
+  display: flex;
+  flex-direction: column;
+}
+.header-section__info-block__item {
+  background-color: #FFFFFF;
+  display: flex;
+  width: 100%;
+  padding: 1.75rem;
+}
+.header-section__info-block__item__item {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  list-style: none;
+}
+.header-section__info-block__item__search .input {
+  width: 100%;
+}
+.header-section__info-block__item__burger-logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.header-section__info-block__item__burger-logo__burger {
+  width: 4.5rem;
+  height: 4.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.header-section__info-block__item__burger-logo__burger span {
+  width: 2rem;
+  height: 0.167rem;
+  background-color: #383838;
+  border-radius: 1000rem;
+  pointer-events: none;
+}
+.header-section__info-block__item__logo {
+  height: 4.5rem;
+}
+.header-section__info-block__item__logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.header-section__info-block__item__add {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+.header-section__info-block__item__add__link {
+  width: 4.5rem;
+  height: 4.5rem;
+  padding: 1rem;
+}
+.header-section__info-block__item__add__link img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.header-section__info-block__item:nth-child(2) {
+  border-radius: 0 0 1.75rem 1.75rem;
+}
+.header-section__info-block__item:nth-child(2) li a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: -0.002em;
+}
+@media (max-width: 768px) {
+  .header-section__info-block__item:nth-child(2) li a {
+    font-size: 1.25rem;
+  }
+}
+.header-section__info-block__item:nth-child(2) li a img {
+  width: 1.75rem;
+  height: 1.75rem;
+  object-fit: contain;
+}
+.header-section__info-block__item:nth-child(2) li a span {
+  color: rgba(56, 56, 56, 0.6);
+}
+.header-section__info-block__item__categories {
+  justify-content: center;
+  flex: 1.5;
+}
+.header-section__info-block__item__categories li a span {
+  color: #383838 !important;
+}
+.header-section__info-block__item__bonuses {
+  justify-content: flex-end;
+}
+
+.advantages-section__info-block {
+  grid-column: span 5;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.advantages-section__info-block__bann {
+  position: relative;
+}
+.advantages-section__info-block__bann .swiper .swiper-wrapper .swiper-slide {
+  border-radius: 2.5rem;
+  overflow: hidden;
+}
+.advantages-section__info-block__bann .swiper .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.advantages-section__info-block__bann .button.prev, .advantages-section__info-block__bann .button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  cursor: pointer;
+  width: 4.5rem;
+  height: 4.5rem;
+}
+.advantages-section__info-block__bann .button.prev.swiper-button-disabled, .advantages-section__info-block__bann .button.next.swiper-button-disabled {
+  opacity: 0.5;
+}
+.advantages-section__info-block__bann .button.prev {
+  left: -2.25rem;
+}
+.advantages-section__info-block__bann .button.next {
+  right: -2.25rem;
+}
+.advantages-section__info-block__additional {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1.75rem;
+}
+
+.new-product-section__head {
+  grid-column: span 5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.new-product-section__head__title {
+  font-size: 3.5rem;
+  font-weight: 500;
+  line-height: 110%;
+  letter-spacing: -0.003em;
+}
+@media (max-width: 768px) {
+  .new-product-section__head__title {
+    font-size: 2.5rem;
+  }
+}
+.new-product-section__head__additional > a {
+  color: rgba(56, 56, 56, 0.6);
+  font-size: 1.75rem;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: -0.002em;
+}
+@media (max-width: 768px) {
+  .new-product-section__head__additional > a {
+    font-size: 1.5rem;
+  }
+}
+.new-product-section__info-block {
+  grid-column: span 5;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1.75rem;
 }
 
 /*# sourceMappingURL=main.css.map */

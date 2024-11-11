@@ -1,0 +1,45 @@
+.advantages-section{
+    &__info-block{
+        grid-column: span 5;
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+        &__bann{
+            position: relative;
+            .swiper{
+                .swiper-wrapper{
+                    .swiper-slide{
+                        border-radius: 2.5rem;
+                        overflow: hidden;
+                        img{
+                            @include image_settings(cover);
+                        }
+                    }
+                }
+            }
+            .button {
+                &.prev, &.next {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    z-index: 1;
+                    cursor: pointer;
+                    width: 4.5rem;
+                    height: 4.5rem;
+                    &.swiper-button-disabled{
+                        opacity: 0.5;
+                    }
+                }
+                &.prev{
+                    left: -2.25rem;
+                }
+                &.next{
+                    right: -2.25rem;
+                }
+            }
+        }
+        &__additional{
+            @include grid(5, 1.75rem);
+        }
+    }
+}

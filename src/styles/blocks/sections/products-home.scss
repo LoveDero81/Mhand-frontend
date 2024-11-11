@@ -1,0 +1,6 @@
+.products-home-section{
+    &__info-block{
+        grid-column: span 5;
+        @include grid(5, 1.75rem);
+    }
+}
