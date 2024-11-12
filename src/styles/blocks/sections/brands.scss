@@ -1,0 +1,39 @@
+&_brands-section{
+    position: relative;
+    &__slider{
+        grid-column: 2/5;
+        position: relative;
+    .swiper{
+        .swiper-wrapper{
+            .swiper-slide{
+                color: $bg-primary;
+                border-radius: 1rem;
+                overflow: hidden;
+                img{
+                    @include image_settings(contain);
+                }
+            }
+        }
+    }
+  }
+}
+.button {
+    &.prev, &.next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+        cursor: pointer;
+        width: 4.5rem;
+        height: 4.5rem;
+        &.swiper-button-disabled{
+            opacity: 0.5;
+        }
+    }
+    &.prev{
+        left: -2.25rem;
+    }
+    &.next{
+        right: -2.25rem;
+    }
+}

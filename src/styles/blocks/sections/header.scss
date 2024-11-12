@@ -1,4 +1,7 @@
 .header-section{
+    &__container{
+        margin: 0 8.25rem;
+    }
     &__info-block{
         grid-column: span 5;
         display: flex;
@@ -58,9 +61,6 @@
                         @include image_settings(contain)
                     }
                 }
-            }
-            &.main{
-                
             }
             &:nth-child(2){
                 border-radius: 0 0 1.75rem 1.75rem;
