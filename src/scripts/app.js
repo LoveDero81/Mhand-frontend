@@ -1,7 +1,7 @@
 import { accordion } from './modules/accordion.js';
-import {slider} from './modules/slider.js';
-import {utils} from './modules/utils.js'
+import { Slider, BannSlider, BrandsSlider } from './modules/swiper/slider.js';
 
 accordion()
-slider()
-utils()
+Slider()
+BannSlider()
+BrandsSlider()

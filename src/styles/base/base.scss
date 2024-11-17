@@ -24,14 +24,14 @@ body {
     background-color: $bg-inverse-subdued-3;
 }
 
-header,footer, main {
-     max-width: 1921px;
-     margin: 0 auto;
-     @include desktop {
-         margin: 0;
-         max-width: none;
-     }
-}
+// main {
+//     max-width: 1921px;
+//     margin: 0 auto;
+//     @include desktop {
+//         margin: 0;
+//         max-width: none;
+//     }
+// }
 
 hr {
     margin: 0;

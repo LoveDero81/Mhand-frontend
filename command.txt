@@ -1,0 +1,3 @@
+sass —watch src/styles/main.scss src/styles/main.css
+
+sass src/styles/main.scss src/styles/main.css -w

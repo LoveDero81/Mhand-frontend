@@ -38,16 +38,6 @@
                 width: 2.5rem;
                 height: 2.5rem;
             }
-            &-small{
-                padding: 0.5rem;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                img{
-                    @include image_settings(contain);
-                    width: 2rem;
-                    height: 2rem;}
-                }
         }
     }
     &_style {
@@ -103,35 +93,6 @@
             &:disabled {
                 background-color: $border-primary-transparent-3;
                 color: $text-primary-transparent-15;
-            }
-            &-subdued{
-                background: none;
-                &::hover{
-                    background-color: $bg-inverse-transparent-6;
-                }
-                &::active{
-                    background-color:$bg-accent;
-                }
-                &:disabled{
-                    background-color: $bg-inverse-transparent-6;
-                    img{
-                        filter: grayscale(1);
-                        opacity: 0.15;
-                    }
-                }
-            }
-            &_gray{
-                background-color:$bg-inverse-transparent-6 ;
-                &:hover {
-                    background-color: $bg-accent;
-                }
-                &:active{
-                    background-color: $bg-inverse;
-                    img{
-                        filter: invert(1);
-                    }
-                }
-
             }
         }
     }

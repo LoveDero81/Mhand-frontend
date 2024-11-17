@@ -1,0 +1,37 @@
+.banner{
+  &__wrapper{
+    margin: 0 10rem;
+    background: url("../images/Promo_Loyality.png");
+    background-size: contain;
+    height: 19.75rem;
+    width: calc(100% - 20rem);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10rem 0 10rem;
+    align-items: center;
+  }
+  &__text-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+  }
+  &__text-first{
+    font-size: 3.5rem;
+  }
+  &__text-last{
+    font-size: 1.7rem;
+    max-width: 38.1rem;
+  }
+
+  &__button{
+    background: $bg-primary;
+    border-radius: 1rem;
+    padding: 1.75rem 2.5rem;
+    border: 0;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    &:hover{
+      opacity: 0.8;
+    }
+  }
+}
