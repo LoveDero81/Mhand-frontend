@@ -1,0 +1,17 @@
+.footer-section {
+  margin-top: 5rem;
+  margin-left: 13.25rem;
+  margin-bottom: 5rem;
+  display: flex;
+}
+.footer-section__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.footer-section__wrapper__mailing {
+  display: flex;
+  flex-direction: column;
+}
+.footer-section__wrapper__mailing__titel {
+  @includeheading_3;
+}/*# sourceMappingURL=footer.css.map */

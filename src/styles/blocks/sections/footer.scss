@@ -1,3 +1,132 @@
-footer-section{
-  
+.footer-section{
+    margin-top: 5rem;
+    margin-left: 13.25rem;
+    margin-bottom: 5rem ;
+    display: flex;
+    gap: 16rem;
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        &__mailing{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 5rem;
+            
+           &__titel{
+            @include heading_3;
+            color: $bg-inverse;
+           }
+           &__description{
+            @include text_2;
+            color: $bg-inverse-transparent-60;
+            margin-bottom: 2.5rem;
+            margin-top: 1rem;
+           }
+        }
+        &__sochial{
+            display: flex;
+            gap: 2.5rem;
+            align-items: center;
+            max-width: 39.1667rem;
+            max-height: 15rem;
+            border:1px solid $border-primary-transparent-15 ;
+            margin-bottom: 2.5rem;
+            img{
+                margin-bottom:2.5rem ;
+                margin-top: 2.5rem;
+                margin-left: 2.5rem;
+                max-width: 10rem;
+                max-height: 10rem;
+            }
+            &__information{
+                display: flex;
+                flex-direction: column;
+                max-width:21.6667rem;
+                max-height:8.5rem;
+                margin-right: 2.5rem;
+                &__heading{
+                    margin: 0;
+                    @include button_1 ;
+                    color: $bg-inverse;
+                }
+                &__description{
+                    margin: 0;
+                    margin-top: 0.5rem;
+                    @include text_3;
+                    color: $text-primary-transparent-60;
+                }
+            }
+        }
+        &__links{
+            display: flex;
+            gap: 1.25rem;
+            width: 11.5rem;
+            height: 3rem;
+            img{
+                height: 3rem;
+                width: 3rem;
+            }
+        }
+    }
+    &__wrapper__right{
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+        max-width: 78.3333rem;
+        width: 100%;
+        justify-content: space-between;
+        &__top{
+            display: flex;
+            &__categories{
+                display: flex;
+                flex-direction: column;
+                &__market{
+                    list-style-type: none;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1.25rem;
+                    
+                    cursor: pointer;
+                    &__heading{
+                        @include button_2;
+                        color: $bg-inverse;
+                        text-wrap: nowrap;
+                    }
+                    &__others{
+                        @include text_2;
+                        color: $text-primary-transparent-60;
+                        text-wrap: nowrap;
+                    }
+                
+                }
+            }
+            
+        }
+        &__down{
+            margin-top:18.8333rem ;
+            display: flex;
+            gap: 18.9167rem;
+            &__rules{
+                display: flex;
+                gap: 1.5rem;
+                align-items: end;
+                p{
+                    @include text_3;
+                    margin-bottom: 0;
+                    color: $text-primary-transparent-60;
+                }
+            }
+            &__developed{
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+                p{
+                    @include text_3;
+                    margin-bottom: 0;
+                    color: $text-primary-transparent-30;
+                }
+            }
+        }
+
+    }
 }

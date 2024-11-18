@@ -21,13 +21,6 @@
                 padding: 1rem 1.25rem;
             }
         }
-        &_small {
-            padding: 0.5rem 1rem;
-            @include button_2;
-            @include mobile {
-                padding: 0.25rem 0.75rem;
-            }
-        }
         &_icon{
             padding: 1rem;
             display: flex;
@@ -37,6 +30,13 @@
                 @include image_settings(contain);
                 width: 2.5rem;
                 height: 2.5rem;
+            }
+            &_small {
+                padding: 0.5rem 1rem;
+                @include button_2;
+                @include mobile {
+                    padding: 0.25rem 0.75rem;
+                }
             }
         }
     }
@@ -93,6 +93,22 @@
             &:disabled {
                 background-color: $border-primary-transparent-3;
                 color: $text-primary-transparent-15;
+            }
+            &-subdued{
+                background: none;
+                &::hover{
+                    background-color: $bg-inverse-transparent-6;
+                }
+                &::active{
+                    background-color:$bg-accent;
+                }
+                &:disabled{
+                    background-color: $bg-inverse-transparent-6;
+                    img{
+                        filter: grayscale(1);
+                        opacity: 0.15;
+                    }
+                }
             }
         }
     }

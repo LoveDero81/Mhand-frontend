@@ -1,0 +1,6 @@
+.products-home-section__info-block {
+  grid-column: span 5;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1.75rem;
+}/*# sourceMappingURL=products-home.css.map */

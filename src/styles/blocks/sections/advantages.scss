@@ -22,7 +22,8 @@
       }
 
       .button {
-        &.prev, &.next {
+        &.prev,
+        &.next {
           position: absolute;
           top: 50%;
           transform: translateY(-50%);
@@ -52,7 +53,6 @@
       grid-template-columns: repeat(5, minmax(0, 1fr));
       gap: 1.75rem;
 
-
       &__wrapper {
         display: flex;
         flex-direction: column;
@@ -63,6 +63,9 @@
         padding: 1.75rem;
         border-radius: 1rem;
         gap: 1rem;
+        &:nth-child(5) {
+          background: $bg-accent;
+        }
       }
 
       &__head {
@@ -79,8 +82,8 @@
         position: absolute;
         right: 0;
         bottom: 0;
-        width: 12rem;
-        height: 12rem;
+        max-width: 12rem;
+        max-height: 12rem;
       }
     }
   }
