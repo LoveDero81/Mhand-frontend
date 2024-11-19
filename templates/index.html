@@ -12,77 +12,98 @@
 <body>
   <header>
     <div class="header-section">
-      <div class="header-section__container container">
-        <div class="header-section__info-block">
-          <div class="header-section__info-block__item main">
-            <div class="header-section__info-block__item__item header-section__info-block__item__burger-logo">
-              <div
-                class="header-section__info-block__item__burger-logo__burger button button_size_icon button_style_outline">
-                <span></span><span></span><span></span>
-              </div>
-              <a href="/" class="header-section__info-block__item__burger-logo__logo">
-                <img src="../src/images/logo.svg" alt="" />
-              </a>
+        <div class="header-section__container">
+            <div class="header-section__info-block">
+                <div class="header-section__info-block__item main">
+                    <div class="header-section__info-block__item__item header-section__info-block__item__burger-logo">
+                        <div class="header-section__info-block__item__burger-logo__burger button button_size_icon button_style_outline">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <a href="/" class="header-section__info-block__item__burger-logo__logo">
+                          <picture>
+                            <source srcset="../src/images/logo-mobile.svg" media="(max-width: 768px)">
+                            <img src="../src/images/logo.svg" alt="">
+                        </picture>
+                        </a>
+                    </div>
+                    <div class="header-section__info-block__item__item header-section__info-block__item__search">
+                        <div class="input input_type_search input_state_static">
+                            <input type="text">
+                        </div>
+                    </div>
+                    <a class="button button_size_icon button_style_outline search-mobile" href="#"><img src="../src/images/search.svg" alt=""></a>
+                    <div class="header-section__info-block__item__item header-section__info-block__item__add">
+                        <a href="" class="header-section__info-block__item__add__link">
+                            <img src="../src/images/lk.svg" alt="">
+                        </a>
+                        <a href="" class="header-section__info-block__item__add__link">
+                            <img src="../src/images/favourites.svg" alt="">
+                        </a>
+                        <a href="" class="header-section__info-block__item__add__link">
+                            <img src="../src/images/cart.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="header-section__info-block__item">
+                    <ul class="header-section__info-block__item__item header-section__info-block__item__other">
+                        <li><a href=""><img src="../src/images/location.svg" alt=""><span>Москва</span></a></li>
+                        <li><a href=""><span>Календарь скидок</span></a></li>
+                        <li><a href=""><span>Магазины</span></a></li>
+                    </ul>
+                    <ul class="header-section__info-block__item__item header-section__info-block__item__categories">
+                        <li><a href=""><span>Женщинам</span></a></li>
+                        <li><a href=""><span>Мужчинам</span></a></li>
+                        <li><a href=""><span>Детям</span></a></li>
+                        <li><a href=""><span>Для дома</span></a></li>
+                        <li><a href=""><span>Высокое качество</span></a></li>
+                    </ul>
+                    <ul class="header-section__info-block__item__item header-section__info-block__item__bonuses">
+                        <li><a href=""><span>Бонусная программа</span></a></li>
+                        <li><a href=""><span>Получить 300 ₽</span></a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="header-section__info-block__item__item header-section__info-block__item__search">
-              <div class="input input_type_search input_state_static">
-                <input type="text" />
-              </div>
+            <div class="burger-block">
+                <div class="burder-block__burger">
+                    <div class="burger-block__burger__links">
+                        <ul>
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Сотрудничество</a></li>
+                            <li><a href="#">Отзывы</a></li>
+                            <li><a href="#">Блог</a></li>
+                            <li><a href="#">Вакансии</a></li>
+                            <li><a href="#">Акции</a></li>
+                            <li><a href="#">Бренды</a></li>
+                        </ul>
+                        <ul>
+                          <li><a href="#">Помощь</a></li>
+                        </ul>
+                    </div>
+                    <div class="burger-block__burder__contact-us">
+                        <div class="burger-block__burder__contact-us__phone-socials">
+                            <div class="burger-block__burder__contact-us__phone-socials__phone">
+                                <a href="tel:8(800) 250-61-68">8(800) 250-61-68</a>
+                            </div>
+                            <div class="burger-block__burder__contact-us__phone-socials__socials">
+                                <a href="#" class="button button_size_icon-small button_style_gray"><img src="../src/images/vk.png" alt=""></a>
+                                <a href="#" class="button button_size_icon-small button_style_gray"><img src="../src/images/tg.png" alt=""></a>
+                                <a href="#" class="button button_size_icon-small button_style_gray"><img src="../src/images/yt.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="burger-block__burger__contact-us__politics">
+                            <a href="#" class="burger-block__burger__contact-us__politics__link">Условия использования</a>
+                            <a href="#" class="burger-block__burger__contact-us__politics__link">Политика конфиденциальности</a>
+                        </div>
+                        <div class="burger-block__burger__contact-us__descriptions">
+                            <span>Разработано <a href="https://studio-websites.ru/">Студией Сайтов</a></span>
+                            <span>©️ Мегахенд 2024. Все права защищены.</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="header-section__info-block__item__item header-section__info-block__item__add">
-              <a href="" class="header-section__info-block__item__add__link">
-                <img src="../src/images/icon.svg" alt="" />
-              </a>
-              <a href="" class="header-section__info-block__item__add__link">
-                <img src="../src/images/favourites.svg" alt="" />
-              </a>
-              <a href="" class="header-section__info-block__item__add__link">
-                <img src="../src/images/cart.svg" alt="" />
-              </a>
-            </div>
-          </div>
-          <div class="header-section__info-block__item">
-            <ul class="header-section__info-block__item__item header-section__info-block__item__other">
-              <li>
-                <a href=""><img src="../src/images/location.svg" alt="" /><span>Москва</span></a>
-              </li>
-              <li>
-                <a href=""><span>Календарь скидок</span></a>
-              </li>
-              <li>
-                <a href=""><span>Магазины</span></a>
-              </li>
-            </ul>
-            <ul class="header-section__info-block__item__item header-section__info-block__item__categories">
-              <li>
-                <a href=""><span>Женщинам</span></a>
-              </li>
-              <li>
-                <a href=""><span>Мужчинам</span></a>
-              </li>
-              <li>
-                <a href=""><span>Детям</span></a>
-              </li>
-              <li>
-                <a href=""><span>Для дома</span></a>
-              </li>
-              <li>
-                <a href=""><span>Высокое качество</span></a>
-              </li>
-            </ul>
-            <ul class="header-section__info-block__item__item header-section__info-block__item__bonuses">
-              <li>
-                <a href=""><span>Бонусная программа</span></a>
-              </li>
-              <li>
-                <a href=""><span>Получить 300 ₽</span></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+        </div> 
     </div>
-  </header>
+</header>
 
   <main>
     <section class="pv-30">
@@ -93,7 +114,10 @@
               <div class="swiper bannSlider">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
-                    <img src="../src/images/bann1.png" alt="" />
+                    <picture>
+                            <source srcset="../src/images/bann1mobile.png" media="(max-width: 768px)">
+                            <img src="../src/images/bann1.png" alt="">
+                        </picture>
                   </div>
                   <a href="https://github.com/MobiusQw" class="swiper-slide">
                     <img src="../src/images/bann2.png" alt="" /></a>
@@ -922,89 +946,91 @@
   </main>
   <footer>
     <div class="footer-section">
-      <div class="footer-section__wrapper">
-        <div class="footer-section__wrapper__mailing">
-          <span class="footer-section__wrapper__mailing__titel">Подпишись на рассылку</span>
-          <span class="footer-section__wrapper__mailing__description">И узнавай первым о новых скидках и акциях.</span>
-          <div class="footer-section__wrapper__mailing__input">
-            <div class="input input_type_button">
-              <input type="text" placeholder="example@gmail.com">
-              <button class="button button_size_icon_small button_style_ghost-subdued">
-                <a href="https://vk.com/audio"><img src="../src/images/a-right.svg" alt=""></a>
-              </button>
+      <div class="footer-section__container container">
+        <div class="footer-section__wrapper">
+          <div class="footer-section__wrapper__mailing">
+            <span class="footer-section__wrapper__mailing__titel">Подпишись на рассылку</span>
+            <span class="footer-section__wrapper__mailing__description">И узнавай первым о новых скидках и акциях.</span>
+            <div class="footer-section__wrapper__mailing__input">
+              <div class="input input_type_button">
+                <input type="text" placeholder="example@gmail.com">
+                <button class="button button_size_icon_small button_style_ghost-subdued">
+                  <a href="https://vk.com/audio"><img src="../src/images/a-right.svg" alt=""></a>
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="footer-section__wrapper__sochial">
-          <img src="../src/images/qr.svg" alt="">
-          <div class="footer-section__wrapper__sochial__information">
-            <p class="footer-section__wrapper__sochial__information__heading">Скачивай наше приложение</p>
-            <p class="footer-section__wrapper__sochial__information__description">И используй бонусную программу по
-              полной!</p>
+          <div class="footer-section__wrapper__sochial">
+            <img src="../src/images/qr.svg" alt="">
+            <div class="footer-section__wrapper__sochial__information">
+              <p class="footer-section__wrapper__sochial__information__heading">Скачивай наше приложение</p>
+              <p class="footer-section__wrapper__sochial__information__description">И используй бонусную программу по
+                полной!</p>
+            </div>
+          </div>
+          <div class="footer-section__wrapper__links">
+            <img src="../src/images/vk.png" alt="">
+            <img src="../src/images/tg.png" alt="">
+            <img src="../src/images/yt.png" alt="">
           </div>
         </div>
-        <div class="footer-section__wrapper__links">
-          <img src="../src/images/vk.png" alt="">
-          <img src="../src/images/tg.png" alt="">
-          <img src="../src/images/yt.png" alt="">
-        </div>
-      </div>
-      <div class="footer-section__wrapper__right">
-        <div class="footer-section__wrapper__right__top">
-          <div class="footer-section__wrapper__right__top__categories">
-            <ul class="footer-section__wrapper__right__top__categories__market">
-              <li class="footer-section__wrapper__right__top__categories__market__heading">Магазин</li>
-              <li class="footer-section__wrapper__right__top__categories__market__others">Каталог</li>
-              <li class="footer-section__wrapper__right__top__categories__market__others">Женщинам</li>
-              <li class="footer-section__wrapper__right__top__categories__market__others">Мужчинам</li>
-              <li class="footer-section__wrapper__right__top__categories__market__others">Детям</li>
-              <li class="footer-section__wrapper__right__top__categories__market__others">Бренды</li>
-            </ul>
+        <div class="footer-section__wrapper__right">
+          <div class="footer-section__wrapper__right__top">
+            <div class="footer-section__wrapper__right__top__categories">
+              <ul class="footer-section__wrapper__right__top__categories__market">
+                <li class="footer-section__wrapper__right__top__categories__market__heading">Магазин</li>
+                <li class="footer-section__wrapper__right__top__categories__market__others">Каталог</li>
+                <li class="footer-section__wrapper__right__top__categories__market__others">Женщинам</li>
+                <li class="footer-section__wrapper__right__top__categories__market__others">Мужчинам</li>
+                <li class="footer-section__wrapper__right__top__categories__market__others">Детям</li>
+                <li class="footer-section__wrapper__right__top__categories__market__others">Бренды</li>
+              </ul>
+            </div>
+            <div class="footer-section__wrapper__right__top__categories">
+              <ul class="footer-section__wrapper__right__top__categories__market">
+                <li class="footer-section__wrapper__right__top__categories__market__heading">О компании</li>
+                <li class="footer-section__wrapper__right__top__categories__market__others">О нас</li>
+                <li class="footer-section__wrapper__right__top__categories__market__others">Отзывы</li>
+                <li class="footer-section__wrapper__right__top__categories__market__others">Блог</li>
+                <li class="footer-section__wrapper__right__top__categories__market__others">Вакансии</li>
+                <li class="footer-section__wrapper__right__top__categories__market__others">Магазины</li>
+              </ul>
+            </div>
+            <div class="footer-section__wrapper__right__top__categories">
+              <ul class="footer-section__wrapper__right__top__categories__market">
+                <li class="footer-section__wrapper__right__top__categories__market__heading">Сотрудничество</li>
+                <li class="footer-section__wrapper__right__top__categories__market__others">Оптовикам</li>
+                <li class="footer-section__wrapper__right__top__categories__market__others">Арендодателям</li>
+                <li class="footer-section__wrapper__right__top__categories__market__others">Реклама</li>
+              </ul>
+            </div>
+            <div class="footer-section__wrapper__right__top__categories">
+              <ul class="footer-section__wrapper__right__top__categories__market">
+                <li class="footer-section__wrapper__right__top__categories__market__heading">Помощь</li>
+                <li class="footer-section__wrapper__right__top__categories__market__others">Доставка и оплата</li>
+                <li class="footer-section__wrapper__right__top__categories__market__others">Условия возврата</li>
+                <li class="footer-section__wrapper__right__top__categories__market__others">Вопрос-ответ</li>
+              </ul>
+            </div>
+            <div class="footer-section__wrapper__right__top__categories">
+              <ul class="footer-section__wrapper__right__top__categories__market">
+                <li class="footer-section__wrapper__right__top__categories__market__heading">Бонусы</li>
+                <li class="footer-section__wrapper__right__top__categories__market__others">Календарь скидок</li>
+                <li class="footer-section__wrapper__right__top__categories__market__others">Бонусная программа</li>
+                <li class="footer-section__wrapper__right__top__categories__market__others">Получить 300 ₽</li>
+                <li class="footer-section__wrapper__right__top__categories__market__others">Акции</li>
+              </ul>
+            </div>
           </div>
-          <div class="footer-section__wrapper__right__top__categories">
-            <ul class="footer-section__wrapper__right__top__categories__market">
-              <li class="footer-section__wrapper__right__top__categories__market__heading">О компании</li>
-              <li class="footer-section__wrapper__right__top__categories__market__others">О нас</li>
-              <li class="footer-section__wrapper__right__top__categories__market__others">Отзывы</li>
-              <li class="footer-section__wrapper__right__top__categories__market__others">Блог</li>
-              <li class="footer-section__wrapper__right__top__categories__market__others">Вакансии</li>
-              <li class="footer-section__wrapper__right__top__categories__market__others">Магазины</li>
-            </ul>
-          </div>
-          <div class="footer-section__wrapper__right__top__categories">
-            <ul class="footer-section__wrapper__right__top__categories__market">
-              <li class="footer-section__wrapper__right__top__categories__market__heading">Сотрудничество</li>
-              <li class="footer-section__wrapper__right__top__categories__market__others">Оптовикам</li>
-              <li class="footer-section__wrapper__right__top__categories__market__others">Арендодателям</li>
-              <li class="footer-section__wrapper__right__top__categories__market__others">Реклама</li>
-            </ul>
-          </div>
-          <div class="footer-section__wrapper__right__top__categories">
-            <ul class="footer-section__wrapper__right__top__categories__market">
-              <li class="footer-section__wrapper__right__top__categories__market__heading">Помощь</li>
-              <li class="footer-section__wrapper__right__top__categories__market__others">Доставка и оплата</li>
-              <li class="footer-section__wrapper__right__top__categories__market__others">Условия возврата</li>
-              <li class="footer-section__wrapper__right__top__categories__market__others">Вопрос-ответ</li>
-            </ul>
-          </div>
-          <div class="footer-section__wrapper__right__top__categories">
-            <ul class="footer-section__wrapper__right__top__categories__market">
-              <li class="footer-section__wrapper__right__top__categories__market__heading">Бонусы</li>
-              <li class="footer-section__wrapper__right__top__categories__market__others">Календарь скидок</li>
-              <li class="footer-section__wrapper__right__top__categories__market__others">Бонусная программа</li>
-              <li class="footer-section__wrapper__right__top__categories__market__others">Получить 300 ₽</li>
-              <li class="footer-section__wrapper__right__top__categories__market__others">Акции</li>
-            </ul>
-          </div>
-        </div>
-        <div class="footer-section__wrapper__right__down">
-          <div class="footer-section__wrapper__right__down__rules">
-            <p>Условия пользования</p>
-            <p>Политика конфиденциальности</p>
-          </div>
-          <div class="footer-section__wrapper__right__down__developed">
-            <p>Разработано Студией Сайтов</p>
-            <p>©️ Мегахенд 2024. Все права защищены. </p>
+          <div class="footer-section__wrapper__right__down">
+            <div class="footer-section__wrapper__right__down__rules">
+              <p>Условия пользования</p>
+              <p>Политика конфиденциальности</p>
+            </div>
+            <div class="footer-section__wrapper__right__down__developed">
+              <p>Разработано Студией Сайтов</p>
+              <p>©️ Мегахенд 2024. Все права защищены. </p>
+            </div>
           </div>
         </div>
       </div>

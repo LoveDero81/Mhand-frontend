@@ -1,0 +1,44 @@
+.burger-block{
+    position: absolute;
+    background-color: $bg-primary;
+    width: 35rem;
+    z-index: 5;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+    @include mobile{
+        width: 100vw;
+        height: 100vh;
+    }
+    &__burger{
+        overflow-y: auto;
+    }
+}
+
+.insert{
+    width: 100vw;
+    height: 100vw;
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    &.active{
+        opacity:1;
+        visibility: visible;
+        background-color: $bg-inverse-transparent-30;
+    }
+}
+
+body.open-menu {
+    @include mobile{
+        overflow: hidden;
+    }
+    .burger-block{
+        opacity: 1;
+        visibility: visible;
+    }
+}

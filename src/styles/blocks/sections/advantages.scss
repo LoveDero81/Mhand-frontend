@@ -11,6 +11,7 @@
       .swiper {
         .swiper-wrapper {
           .swiper-slide {
+            height: auto;
             border-radius: 2.5rem;
             overflow: hidden;
 
@@ -31,6 +32,11 @@
           cursor: pointer;
           width: 4.5rem;
           height: 4.5rem;
+          @include mobile{
+            top: auto;
+            bottom: 1.5rem;
+            transform:none ;
+          }
 
           &.swiper-button-disabled {
             opacity: 0.5;
@@ -39,19 +45,33 @@
 
         &.prev {
           left: -2.25rem;
+          @include mobile{
+            left: 1.75rem;
+          }
         }
 
         &.next {
           right: -2.25rem;
+          @include mobile{
+            right: 1.75rem;
+          }
         }
       }
     }
 
     &__additional {
+      &::-webkit-scrollbar{
+        display: none;
+      }
       grid-column: span 5;
       display: grid;
       grid-template-columns: repeat(5, minmax(0, 1fr));
       gap: 1.75rem;
+      overflow-x: auto;
+      @include mobile{
+        display: flex;
+        text-wrap: nowrap;
+      }
 
       &__wrapper {
         display: flex;
@@ -74,8 +94,9 @@
 
       &__description {
         font-size: 1.25rem;
-        width: 15rem;
+        max-width: 15rem;
         color: $text-primary-transparent-60;
+        text-wrap: nowrap;
       }
 
       img {
