@@ -96,7 +96,11 @@
         font-size: 1.25rem;
         max-width: 15rem;
         color: $text-primary-transparent-60;
-        text-wrap: nowrap;
+        @include mobile{
+          max-width: 16rem;
+          height: 100%;
+          text-wrap: wrap;
+        }
       }
 
       img {

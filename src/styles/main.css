@@ -294,6 +294,7 @@ input {
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s;
+  bottom: -24.16rem;
 }
 @media (max-width: 768px) {
   .burger-block {
@@ -924,7 +925,13 @@ body.open-menu header .header-section__info-block__item__burger-logo__burger spa
   font-size: 1.25rem;
   max-width: 15rem;
   color: rgba(56, 56, 56, 0.6);
-  text-wrap: nowrap;
+}
+@media (max-width: 768px) {
+  .advantages-section__info-block__additional__description {
+    max-width: 16rem;
+    height: 100%;
+    text-wrap: wrap;
+  }
 }
 .advantages-section__info-block__additional img {
   position: absolute;
@@ -1058,8 +1065,15 @@ body.open-menu header .header-section__info-block__item__burger-logo__burger spa
 
 .footer-section {
   display: flex;
-  gap: 16rem;
   justify-content: space-between;
+  background-color: #FFFFFF;
+  padding: 5rem;
+  max-width: 143.5rem;
+  margin: 0 auto;
+  border-radius: 1.5rem 1.5rem 0 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .footer-section__wrapper {
   display: flex;
@@ -1160,7 +1174,7 @@ body.open-menu header .header-section__info-block__item__burger-logo__burger spa
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  max-width: 78.3333rem;
+  max-width: 80rem;
   width: 100%;
   justify-content: space-between;
 }
