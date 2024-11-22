@@ -11,6 +11,7 @@ export function utils(){
     burger.addEventListener('click',function(event) {
         body.classList.toggle('open-menu')
         insert.classList.toggle('active')
+        header-section-active
         // if (body.className =='open-menu'){
         //     body.style.paddingTop = header.offsetHeight + 'px'
         // }else{

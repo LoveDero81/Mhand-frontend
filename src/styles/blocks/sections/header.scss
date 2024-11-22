@@ -4,10 +4,13 @@ header {
     top: 0;
     left: 0;
     z-index: 5;
+    padding-bottom: 1.6rem ;
     .header-section{
         width: 100%;
         &__container{ 
             margin: 0 8.25rem;
+            border-radius: 0 0 1.75rem 1.75rem;
+            background-color: $bg-primary;
             @include mobile {
                 margin: 0;
             }
@@ -18,7 +21,6 @@ header {
             display: flex;
             flex-direction: column;
             &__item{
-                background-color: $bg-primary;
                 display: flex;
                 width: 100%;
                 padding: 1.75rem;
@@ -36,6 +38,8 @@ header {
                             flex: none;
                         }
                     }
+                    margin-left: 0;
+                        padding-left: 0;
                 }
                 &__search{
                     .input{
@@ -99,7 +103,6 @@ header {
                     
                 }
                 &:nth-child(2){
-                    border-radius: 0 0 1.75rem 1.75rem;
                     @include mobile{
                         display: none;
                     }
@@ -140,6 +143,9 @@ header {
 }
 body.open-menu{
     header{
+        .header-section__container{
+            border-radius: 0 0 1.75rem 0;
+        }
         .header-section__info-block__item__burger-logo__burger{
             span{
                 position: absolute;

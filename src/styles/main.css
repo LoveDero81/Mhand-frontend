@@ -294,7 +294,8 @@ input {
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s;
-  bottom: -24.16rem;
+  height: 58rem;
+  border-radius: 0 0 1.75rem 1.75rem;
 }
 @media (max-width: 768px) {
   .burger-block {
@@ -304,6 +305,104 @@ input {
 }
 .burger-block__burger {
   overflow-y: auto;
+  max-width: 35rem;
+}
+.burger-block__burger__links {
+  margin: 0;
+  text-decoration: none;
+  display: flex;
+  padding-left: 1.75rem;
+  flex-direction: column;
+  padding-top: 1.75rem;
+}
+.burger-block__burger__links ul {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.burger-block__burger__links ul a {
+  display: flex;
+  flex-direction: column;
+  color: #383838;
+  font-size: 1.75rem;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: -0.002em;
+}
+@media (max-width: 768px) {
+  .burger-block__burger__links ul a {
+    font-size: 1.5rem;
+  }
+}
+.burger-block__burger__links__help {
+  margin: 0;
+  padding-top: 3.5rem;
+  padding-bottom: 5rem;
+}
+.burger-block__burger__contact-us {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+.burger-block__burger__contact-us__phone-socials {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+.burger-block__burger__contact-us__phone-socials__phone a {
+  text-decoration: none;
+  color: #383838;
+  padding-left: 1.75rem;
+  font-size: 1.3rem;
+}
+.burger-block__burger__contact-us__phone-socials__socials {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  padding-left: 1.75rem;
+  width: 13.5rem;
+}
+.burger-block__burger__contact-us__politics {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1.75rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: -0.001em;
+  gap: 1rem;
+}
+@media (max-width: 768px) {
+  .burger-block__burger__contact-us__politics {
+    font-size: 1rem;
+  }
+}
+.burger-block__burger__contact-us__politics a {
+  text-decoration: none;
+  color: rgba(56, 56, 56, 0.6);
+}
+.burger-block__burger__contact-us__descriptions {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1.75rem;
+  gap: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: -0.001em;
+  color: rgba(56, 56, 56, 0.3019607843);
+}
+@media (max-width: 768px) {
+  .burger-block__burger__contact-us__descriptions {
+    font-size: 1rem;
+  }
+}
+.burger-block__burger__contact-us__descriptions a {
+  text-decoration: none;
+  color: rgba(56, 56, 56, 0.3019607843);
 }
 
 .insert {
@@ -416,11 +515,11 @@ body.open-menu .burger-block {
   justify-content: center;
 }
 .button_size_icon-small img {
+  width: 3rem !important;
+  height: 3rem !important;
   width: 100%;
   height: 100%;
   object-fit: contain;
-  width: 2rem;
-  height: 2rem;
 }
 .button_style_accent {
   background-color: #FFE600;
@@ -493,6 +592,8 @@ body.open-menu .burger-block {
   opacity: 0.15;
 }
 .button_style_gray {
+  width: 3rem;
+  height: 3rem;
   background-color: rgba(56, 56, 56, 0.0588235294);
 }
 .button_style_gray:hover {
@@ -674,12 +775,15 @@ header {
   top: 0;
   left: 0;
   z-index: 5;
+  padding-bottom: 1.6rem;
 }
 header .header-section {
   width: 100%;
 }
 header .header-section__container {
   margin: 0 8.25rem;
+  border-radius: 0 0 1.75rem 1.75rem;
+  background-color: #FFFFFF;
 }
 @media (max-width: 768px) {
   header .header-section__container {
@@ -693,7 +797,6 @@ header .header-section__info-block {
   flex-direction: column;
 }
 header .header-section__info-block__item {
-  background-color: #FFFFFF;
   display: flex;
   width: 100%;
   padding: 1.75rem;
@@ -709,6 +812,8 @@ header .header-section__info-block__item__item {
   align-items: center;
   gap: 1.5rem;
   list-style: none;
+  margin-left: 0;
+  padding-left: 0;
 }
 @media (max-width: 768px) {
   header .header-section__info-block__item__item:nth-child(1) {
@@ -780,9 +885,6 @@ header .header-section__info-block__item__add__link img {
   height: 100%;
   object-fit: contain;
 }
-header .header-section__info-block__item:nth-child(2) {
-  border-radius: 0 0 1.75rem 1.75rem;
-}
 @media (max-width: 768px) {
   header .header-section__info-block__item:nth-child(2) {
     display: none;
@@ -821,6 +923,9 @@ header .header-section__info-block__item__bonuses {
   justify-content: flex-end;
 }
 
+body.open-menu header .header-section__container {
+  border-radius: 0 0 1.75rem 0;
+}
 body.open-menu header .header-section__info-block__item__burger-logo__burger span {
   position: absolute;
 }

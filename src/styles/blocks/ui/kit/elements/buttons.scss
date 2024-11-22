@@ -44,9 +44,9 @@
                 align-items: center;
                 justify-content: center;
                 img {
+                    width: 3rem !important;
+                    height: 3rem !important;
                     @include image_settings(contain);
-                    width: 2rem;
-                    height: 2rem;
                 }
             }
         }
@@ -123,6 +123,8 @@
             }
         }
         &_gray {
+            width: 3rem;
+            height: 3rem;
             background-color: $bg-inverse-transparent-6;
             &:hover {
                 background-color: $bg-accent;
