@@ -1,6 +1,6 @@
 .banner{
   &__wrapper{
-    margin: 0 10rem;
+    margin: 0 auto;
     background: url("../images/Promo_Loyality.png");
     background-size: contain;
     height: 19.75rem;
@@ -9,6 +9,16 @@
     justify-content: space-between;
     padding: 0 10rem 0 10rem;
     align-items: center;
+    @include mobile{
+      width: 100%;
+      background: url("../images/Promo_Loyality_Mobile.png");
+      height: 34.9rem;
+      margin: 0 0.5rem;
+      box-sizing: border-box;
+      padding: 2rem;
+      flex-direction: column;
+      background-repeat: no-repeat;
+    }
   }
   &__text-wrapper{
     display: flex;
@@ -17,10 +27,18 @@
   }
   &__text-first{
     font-size: 3.5rem;
+
+    @include mobile{
+      font-size: 2.5rem;
+    }
   }
   &__text-last{
     font-size: 1.7rem;
     max-width: 38.1rem;
+
+    @include mobile{
+      font-size: 1.5rem;
+    }
   }
 
   &__button{
@@ -32,6 +50,9 @@
     transition-duration: 0.5s;
     &:hover{
       opacity: 0.8;
+    }
+    @include mobile{
+      width: 100%;
     }
   }
 }

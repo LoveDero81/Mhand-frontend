@@ -160,10 +160,21 @@ input {
   display: flex;
   gap: 1rem;
 }
+@media (max-width: 768px) {
+  .product-card__information {
+    padding: 0 0.25rem;
+    gap: 0.75rem;
+  }
+}
 .product-card__information__price-block {
   display: flex;
   gap: 1rem;
   align-items: center;
+}
+@media (max-width: 768px) {
+  .product-card__information__price-block {
+    gap: 0.75rem;
+  }
 }
 .product-card__information__price-block__price {
   font-size: 1.75rem;
@@ -1046,6 +1057,13 @@ body.open-menu header .header-section__info-block__item__burger-logo__burger spa
   max-height: 12rem;
 }
 
+@media (max-width: 768px) {
+  .new-product-section {
+    padding-top: 3rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}
 .new-product-section__head {
   grid-column: span 5;
   display: flex;
@@ -1081,6 +1099,16 @@ body.open-menu header .header-section__info-block__item__burger-logo__burger spa
   grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 1.75rem;
 }
+@media (max-width: 768px) {
+  .new-product-section__info-block {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.75rem;
+  }
+}
 
 .products-home-section__info-block {
   grid-column: span 5;
@@ -1097,7 +1125,7 @@ body.open-menu header .header-section__info-block__item__burger-logo__burger spa
 }
 
 .banner__wrapper {
-  margin: 0 10rem;
+  margin: 0 auto;
   background: url("../images/Promo_Loyality.png");
   background-size: contain;
   height: 19.75rem;
@@ -1107,6 +1135,18 @@ body.open-menu header .header-section__info-block__item__burger-logo__burger spa
   padding: 0 10rem 0 10rem;
   align-items: center;
 }
+@media (max-width: 768px) {
+  .banner__wrapper {
+    width: 100%;
+    background: url("../images/Promo_Loyality_Mobile.png");
+    height: 34.9rem;
+    margin: 0 0.5rem;
+    box-sizing: border-box;
+    padding: 2rem;
+    flex-direction: column;
+    background-repeat: no-repeat;
+  }
+}
 .banner__text-wrapper {
   display: flex;
   flex-direction: column;
@@ -1115,9 +1155,19 @@ body.open-menu header .header-section__info-block__item__burger-logo__burger spa
 .banner__text-first {
   font-size: 3.5rem;
 }
+@media (max-width: 768px) {
+  .banner__text-first {
+    font-size: 2.5rem;
+  }
+}
 .banner__text-last {
   font-size: 1.7rem;
   max-width: 38.1rem;
+}
+@media (max-width: 768px) {
+  .banner__text-last {
+    font-size: 1.5rem;
+  }
 }
 .banner__button {
   background: #FFFFFF;
@@ -1130,25 +1180,35 @@ body.open-menu header .header-section__info-block__item__burger-logo__burger spa
 .banner__button:hover {
   opacity: 0.8;
 }
+@media (max-width: 768px) {
+  .banner__button {
+    width: 100%;
+  }
+}
 
 .brands-section {
   position: relative;
 }
-.brands-section__slider {
+.brands-section_container__slider {
   grid-column: 2/5;
   position: relative;
 }
-.brands-section__slider .swiper .swiper-wrapper .swiper-slide {
+.brands-section_container__slider .swiper .swiper-wrapper .swiper-slide {
   color: #FFFFFF;
   border-radius: 1rem;
   overflow: hidden;
 }
-.brands-section__slider .swiper .swiper-wrapper .swiper-slide img {
+.brands-section_container__slider .swiper .swiper-wrapper .swiper-slide img {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
 
+@media (max-width: 768px) {
+  .button {
+    display: none;
+  }
+}
 .button.prev, .button.next {
   position: absolute;
   top: 50%;
@@ -1176,9 +1236,13 @@ body.open-menu header .header-section__info-block__item__burger-logo__burger spa
   max-width: 143.5rem;
   margin: 0 auto;
   border-radius: 1.5rem 1.5rem 0 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+@media (max-width: 768px) {
+  .footer-section {
+    flex-direction: column;
+    padding: 1.25rem;
+  }
 }
 .footer-section__wrapper {
   display: flex;
@@ -1223,6 +1287,25 @@ body.open-menu header .header-section__info-block__item__burger-logo__burger spa
   max-height: 15rem;
   border: 1px solid rgba(56, 56, 56, 0.1490196078);
   margin-bottom: 2.5rem;
+  border-radius: 1rem;
+}
+@media (max-width: 768px) {
+  .footer-section__wrapper__sochial {
+    flex-direction: column;
+    padding: 2rem;
+    max-height: auto;
+    height: 100%;
+    gap: 2rem;
+  }
+}
+.footer-section__wrapper__sochial__button {
+  display: none;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .footer-section__wrapper__sochial__button {
+    display: block;
+  }
 }
 .footer-section__wrapper__sochial img {
   margin-bottom: 2.5rem;
@@ -1230,6 +1313,11 @@ body.open-menu header .header-section__info-block__item__burger-logo__burger spa
   margin-left: 2.5rem;
   max-width: 10rem;
   max-height: 10rem;
+}
+@media (max-width: 768px) {
+  .footer-section__wrapper__sochial img {
+    display: none;
+  }
 }
 .footer-section__wrapper__sochial__information {
   display: flex;
@@ -1271,6 +1359,10 @@ body.open-menu header .header-section__info-block__item__burger-logo__burger spa
   width: 11.5rem;
   height: 3rem;
 }
+.footer-section__wrapper__links__image-wrapper {
+  background-color: rgba(56, 56, 56, 0.0588235294);
+  border-radius: 0.5rem;
+}
 .footer-section__wrapper__links img {
   height: 3rem;
   width: 3rem;
@@ -1286,6 +1378,11 @@ body.open-menu header .header-section__info-block__item__burger-logo__burger spa
 .footer-section__wrapper__right__top {
   display: flex;
 }
+@media (max-width: 768px) {
+  .footer-section__wrapper__right__top {
+    flex-direction: column;
+  }
+}
 .footer-section__wrapper__right__top__categories {
   display: flex;
   flex-direction: column;
@@ -1296,6 +1393,12 @@ body.open-menu header .header-section__info-block__item__burger-logo__burger spa
   flex-direction: column;
   gap: 1.25rem;
   cursor: pointer;
+}
+@media (max-width: 768px) {
+  .footer-section__wrapper__right__top__categories__market {
+    padding-left: 0;
+    margin-top: 3rem;
+  }
 }
 .footer-section__wrapper__right__top__categories__market__heading {
   font-size: 1.5rem;
@@ -1327,6 +1430,17 @@ body.open-menu header .header-section__info-block__item__burger-logo__burger spa
   margin-top: 18.8333rem;
   display: flex;
   gap: 18.9167rem;
+}
+@media (max-width: 768px) {
+  .footer-section__wrapper__right__down {
+    margin-top: 3rem;
+    gap: 1.2rem;
+  }
+}
+@media (max-width: 768px) {
+  .footer-section__wrapper__right__down {
+    flex-direction: column;
+  }
 }
 .footer-section__wrapper__right__down__rules {
   display: flex;
@@ -1363,6 +1477,11 @@ body.open-menu header .header-section__info-block__item__burger-logo__burger spa
 @media (max-width: 768px) {
   .footer-section__wrapper__right__down__developed p {
     font-size: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  .footer-section__wrapper__right__down__developed p {
+    margin-top: 0;
   }
 }
 

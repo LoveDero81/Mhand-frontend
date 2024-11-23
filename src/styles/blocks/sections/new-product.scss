@@ -1,9 +1,15 @@
 .new-product-section{
+    @include mobile{
+     padding-top: 3rem; 
+     padding-left: 1.25rem; 
+     padding-right: 1.25rem;    
+    }
     &__head{
         grid-column: span  5;
         display: flex;
         align-items:center;
-        justify-content: space-between;
+        justify-content: space-between; 
+       
         &__title{
             @include heading_2;
         }
@@ -17,5 +23,11 @@
     &__info-block{
         grid-column: span  5;
         @include grid(5, 1.75rem);
+        @include mobile{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            @include grid(2, 1.75rem);
+        }
     }
 }
