@@ -1,6 +1,5 @@
 .brands-section {
   position: relative;
-  &_container{
     &__slider {
       grid-column: 2/5;
       position: relative;
@@ -18,7 +17,6 @@
       }
     }
   }
-}
 .button {
   @include mobile{
     display: none;

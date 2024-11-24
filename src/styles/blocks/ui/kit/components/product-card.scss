@@ -1,132 +1,157 @@
 .product-card {
-    background-color: $bg-primary;
-    border-radius: 1.25rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1.75rem;
-    transition: all .3s;
-    height: fit-content;
-    &:hover{
-        padding: 0.5rem;
-        margin-bottom: -10rem;
-        transform: translateY(-2rem);
-        box-shadow: 0px 0px 9px 0px rgba(56, 56, 26, 0.2);
-        .product-card__buttons{
-            visibility: visible;
-            max-height: 10rem;
-            opacity: 1;
-        }
+  background-color: $bg-primary;
+  border-radius: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  transition: all 0.3s;
+  height: fit-content;
+  @include mobile {
+    gap: 1.25rem;
+    width: 15rem;
+    height: 30.9rem;
+  }
+  &:hover {
+    padding: 0.5rem;
+    margin-bottom: -10rem;
+    transform: translateY(-2rem);
+    box-shadow: 0px 0px 9px 0px rgba(56, 56, 26, 0.2);
+    .product-card__buttons {
+      visibility: visible;
+      max-height: 10rem;
+      opacity: 1;
+      @include mobile {
+        max-height: 3.6rem;
+      }
     }
-    &__images {
-        position: relative;
-        background-color: $bg-inverse-transparent-3;
-        border-radius: 1rem;
-        overflow: hidden;
-        &::before {
-            content: '';
-            display: block;
-            width: 100%;
-            padding-bottom: 100%;
+  }
+  &__images {
+    position: relative;
+    background-color: $bg-inverse-transparent-3;
+    border-radius: 1rem;
+    overflow: hidden;
+    &::before {
+      content: "";
+      display: block;
+      width: 100%;
+      padding-bottom: 100%;
+    }
+    img {
+      @include image_settings(contain);
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .swiper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__information {
+    padding: 0 1.75rem;
+    flex-direction: column;
+    display: flex;
+    gap: 1rem;
+    @include mobile {
+      padding: 0 0.25rem;
+      gap: 0.75rem;
+    }
+    &__price-block {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      @include mobile {
+        gap: 0.75rem;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(40px, 1fr));
+      }
+      &__price {
+        @include button_1;
+        height: 2rem;
+        width: 11rem;
+      }
+      &__cashback {
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+        background-color: $bg-system-transparent-6;
+        padding: 0.25rem 0.5rem;
+        border-radius: 1000rem;
+        @include mobile {
+          height: 2rem;
+          width: 11rem;
         }
         img {
-            @include image_settings(contain);
-            position: absolute;
-            top: 0;
-            left: 0;
+          @include image_settings(contain);
+          width: 1.5rem;
+          height: 1.5rem;
         }
-        .swiper {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+        span {
+          @include text_3;
         }
-    }
-    &__information {
-        padding: 0 1.75rem;
-        flex-direction: column;
+      }
+      &__old-price-block {
         display: flex;
-        gap: 1rem;
-        @include mobile{
-            padding: 0 0.25rem;
-            gap: 0.75rem;
+        align-items: center;
+        gap: 0.5rem;
+        @include mobile {
+          height: 2rem;
+          width: 11rem;
         }
-        &__price-block {
-            display: flex;
-            gap: 1rem;
-            align-items: center;
-            @include mobile{
-                gap: 0.75rem;
-            }
-            &__price{
-                @include button_1;
-              
-            }
-            &__cashback {
-                display: flex;
-                align-items: center;
-                gap: 0.25rem;
-                background-color: $bg-system-transparent-6;
-                padding: 0.25rem 0.5rem;
-                border-radius: 1000rem;
-                img {
-                    @include image_settings(contain);
-                    width: 1.5rem;
-                    height: 1.5rem;
-                }
-                span {
-                    @include text_3;
-                }
-            }
-            &__old-price-block {
-                display: flex;
-                align-items: center;
-                gap: 0.5rem;
-                &__price{
-                    @include text_3;
-                    color: $text-primary-transparent-60;
-                }
-                &__sale{
-                    @include text_3;
-                    color: $text-subaccent;
-                }
-            }
+        &__price {
+          @include text_3;
+          color: $text-primary-transparent-60;
         }
-        &__name{
-            @include text_2;
-            color: $text-primary-transparent-60;
+        &__sale {
+          @include text_3;
+          color: $text-subaccent;
         }
-        &__add{
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            &__img-name{
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            img{
-                @include image_settings(contain);
-                width: 1.5rem;
-                height: 1.5rem;
-            }
-            span{
-                @include text_3;
-                color: $text-primary-transparent-60;
-            }
-            }
-        }
+      }
     }
-    &__buttons {
+    &__name {
+      @include text_2;
+      color: $text-primary-transparent-60;
+    }
+    &__add {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      &__img-name {
         display: flex;
-        gap: 1rem;
-        padding: 0 1.75rem;
-        visibility: hidden;
-        max-height: 0; 
-        overflow: hidden;
-        opacity: 0;
-        transition: all .3s ;
-        .buy{
-            flex: 1;
+        align-items: center;
+        gap: 0.5rem;
+        img {
+          @include image_settings(contain);
+          width: 1.5rem;
+          height: 1.5rem;
         }
+        span {
+          @include text_3;
+          color: $text-primary-transparent-60;
+        }
+      }
     }
+  }
+  &__buttons {
+    display: flex;
+    gap: 1rem;
+    padding: 0 1.75rem;
+    visibility: hidden;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+    @include mobile {
+        height:3.6rem ;
+        visibility: visible;
+        max-height: initial;
+        opacity: 1;
+    }
+    .buy {
+      flex: 1;
+    }
+  }
 }

@@ -116,6 +116,13 @@ input {
   transition: all 0.3s;
   height: fit-content;
 }
+@media (max-width: 768px) {
+  .product-card {
+    gap: 1.25rem;
+    width: 15rem;
+    height: 30.9rem;
+  }
+}
 .product-card:hover {
   padding: 0.5rem;
   margin-bottom: -10rem;
@@ -126,6 +133,11 @@ input {
   visibility: visible;
   max-height: 10rem;
   opacity: 1;
+}
+@media (max-width: 768px) {
+  .product-card:hover .product-card__buttons {
+    max-height: 3.6rem;
+  }
 }
 .product-card__images {
   position: relative;
@@ -174,6 +186,8 @@ input {
 @media (max-width: 768px) {
   .product-card__information__price-block {
     gap: 0.75rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(40px, 1fr));
   }
 }
 .product-card__information__price-block__price {
@@ -181,6 +195,8 @@ input {
   font-weight: 500;
   line-height: 130%;
   letter-spacing: -0.003em;
+  height: 2rem;
+  width: 11rem;
 }
 @media (max-width: 768px) {
   .product-card__information__price-block__price {
@@ -194,6 +210,12 @@ input {
   background-color: rgba(11, 210, 11, 0.0588235294);
   padding: 0.25rem 0.5rem;
   border-radius: 1000rem;
+}
+@media (max-width: 768px) {
+  .product-card__information__price-block__cashback {
+    height: 2rem;
+    width: 11rem;
+  }
 }
 .product-card__information__price-block__cashback img {
   width: 100%;
@@ -217,6 +239,12 @@ input {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+}
+@media (max-width: 768px) {
+  .product-card__information__price-block__old-price-block {
+    height: 2rem;
+    width: 11rem;
+  }
 }
 .product-card__information__price-block__old-price-block__price {
   font-size: 1.25rem;
@@ -292,6 +320,14 @@ input {
   overflow: hidden;
   opacity: 0;
   transition: all 0.3s;
+}
+@media (max-width: 768px) {
+  .product-card__buttons {
+    height: 3.6rem;
+    visibility: visible;
+    max-height: initial;
+    opacity: 1;
+  }
 }
 .product-card__buttons .buy {
   flex: 1;
@@ -1070,6 +1106,11 @@ body.open-menu header .header-section__info-block__item__burger-logo__burger spa
   align-items: center;
   justify-content: space-between;
 }
+@media (max-width: 768px) {
+  .new-product-section__head {
+    padding-bottom: 3rem;
+  }
+}
 .new-product-section__head__title {
   font-size: 3.5rem;
   font-weight: 500;
@@ -1107,6 +1148,7 @@ body.open-menu header .header-section__info-block__item__burger-logo__burger spa
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1.75rem;
+    gap: 1.25rem;
   }
 }
 
@@ -1189,16 +1231,16 @@ body.open-menu header .header-section__info-block__item__burger-logo__burger spa
 .brands-section {
   position: relative;
 }
-.brands-section_container__slider {
+.brands-section__slider {
   grid-column: 2/5;
   position: relative;
 }
-.brands-section_container__slider .swiper .swiper-wrapper .swiper-slide {
+.brands-section__slider .swiper .swiper-wrapper .swiper-slide {
   color: #FFFFFF;
   border-radius: 1rem;
   overflow: hidden;
 }
-.brands-section_container__slider .swiper .swiper-wrapper .swiper-slide img {
+.brands-section__slider .swiper .swiper-wrapper .swiper-slide img {
   width: 100%;
   height: 100%;
   object-fit: contain;
