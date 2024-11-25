@@ -23,10 +23,21 @@
             }
         }
         &_basic {
-            padding: 1.25rem 1.75rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             @include button_2;
             @include mobile {
                 padding: 1rem 1.25rem;
+            }
+            img {
+                width: 2.5rem;
+                height: 2.5rem;
+
+                @include mobile {
+                    width: 2rem;
+                    height: 2rem;
+                }
             }
         }
         &_small {

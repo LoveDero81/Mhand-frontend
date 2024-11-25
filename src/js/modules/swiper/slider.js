@@ -1,6 +1,10 @@
-
+import Swiper from 'swiper';
+import { Navigation, Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
 export function Slider() {
   new Swiper(".productGallerySlider", {
+    modules: [Pagination],
     pagination: {
       el: ".productGallerySlider .swiper-pagination",
     },
@@ -9,6 +13,7 @@ export function Slider() {
 
 export function BannSlider() {
   new Swiper(".bannSlider", {
+    modules: [Navigation],
     slidesPerView: 1,
     spaceBetween: 21,
     loop: true,
@@ -27,6 +32,7 @@ export function BannSlider() {
 
 export function BrandsSlider() {
   new Swiper(".brandsSlider", {
+    modules: [Navigation],
     slidesPerView: 5,
     spaceBetween: 21,
     loop: true,
