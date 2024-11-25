@@ -1,3 +1,5 @@
+@use '../../index' as *;
+
 header {
     position: sticky;
     width: 100vw;
@@ -11,6 +13,7 @@ header {
             margin: 0 8.25rem;
             border-radius: 0 0 1.75rem 1.75rem;
             background-color: $bg-primary;
+            transition: all 0.3s;
             @include mobile {
                 margin: 0;
             }
@@ -33,13 +36,13 @@ header {
                     align-items: center;
                     gap: 1.5rem;
                     list-style: none;
+                    margin-left: 0;
+                    padding-left: 0;
                     &:nth-child(1){
                         @include mobile {
                             flex: none;
                         }
                     }
-                    margin-left: 0;
-                        padding-left: 0;
                 }
                 &__search{
                     .input{
@@ -94,13 +97,18 @@ header {
                         width: 4.5rem;
                         height: 4.5rem;
                         padding: 1rem;
+                        @include mobile{
+                            height: 2.6rem;
+                            width: 2.6rem;
+                            padding: 0.2rem;
+                        }
                         img{
                             @include image_settings(contain)
                         }
                     }
                 }
                 &.main{
-                    
+                    align-items: center;
                 }
                 &:nth-child(2){
                     @include mobile{
@@ -145,6 +153,9 @@ body.open-menu{
     header{
         .header-section__container{
             border-radius: 0 0 1.75rem 0;
+            @include mobile {
+                border-radius: 0;
+            }
         }
         .header-section__info-block__item__burger-logo__burger{
             span{

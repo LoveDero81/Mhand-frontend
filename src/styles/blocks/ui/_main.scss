@@ -1,2 +1,2 @@
-@import './kit/components/_main.scss';
-@import './kit/elements/_main.scss';
+@use './kit/components/_main' as *;
+@use './kit/elements/_main' as *;

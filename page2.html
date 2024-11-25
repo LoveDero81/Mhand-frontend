@@ -1,0 +1,29 @@
+{{> TheTop }}
+{{> TheHeader }}
+
+<main>
+	<section class="pv-60">
+		<div class="new-product-section">
+			<div class="new-product-section__container container">
+				<div class="new-product-section__head">
+					<div class="new-product-section__head__title">Новинки</div>
+					<div class="new-product-section__head__additional">
+						<a href="#">Все товары</a>
+					</div>
+				</div>
+				<div class="new-product-section__info-block">
+					{{> ProductCard }}
+					{{> ProductCard }}
+					{{> ProductCard }}
+					{{> ProductCard }}
+					{{> ProductCard }}
+				</div>
+			</div>
+		</div>
+	</section>
+
+	{{> TheBannerPageTwo }}
+</main>
+
+{{> TheFooter }}
+{{> TheBot }}

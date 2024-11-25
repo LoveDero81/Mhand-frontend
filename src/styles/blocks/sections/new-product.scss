@@ -1,8 +1,8 @@
+@use '../../index' as *;
+
 .new-product-section{
     @include mobile{
-     padding-top: 3rem; 
-     padding-left: 1.25rem; 
-     padding-right: 1.25rem;    
+     padding-top: 3rem;
     }
     &__head{
         grid-column: span  5;

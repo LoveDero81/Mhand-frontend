@@ -1,8 +1,7 @@
-@import "./header.scss";
-@import "./advantages.scss";
-@import "./new-product.scss";
-@import "./products-home.scss";
-@import "./products-home.scss";
-@import "./banner.scss";
-@import "./brands.scss";
-@import "./footer.scss";
+@use "./header";
+@use "./advantages";
+@use "./new-product";
+@use "./products-home";
+@use "./banner";
+@use "./brands";
+@use "./footer";

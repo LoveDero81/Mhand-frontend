@@ -1,2 +1,2 @@
-@import './ui/_main.scss';
-@import './sections/_main.scss';
+@use './ui/_main' as *;
+@use './sections/_main' as *;

@@ -1,8 +1,15 @@
+@use '../../index' as *;
+
 .products-home-section{
     &__info-block{
-        grid-column: span 5;
-        display: grid;
-        grid-template-columns: repeat(5, minmax(0, 1fr));
-        gap: 1.75rem;
+        grid-column: span  5;
+        @include grid(5, 1.75rem);
+        @include mobile{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            @include grid(2, 1.75rem);
+            gap: 1.25rem ;
+        }
     }
 }

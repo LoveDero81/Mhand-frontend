@@ -1,0 +1,150 @@
+{{> TheTop }}
+{{> TheHeader }}
+<main>
+	<section class="pv-30">
+		<div class="advantages-section">
+			<div class="advantages-section__container container">
+				<div class="advantages-section__info-block">
+					<div class="advantages-section__info-block__bann">
+						<div class="swiper bannSlider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<picture>
+										<source srcset="/images/bann1mobile.png" media="(max-width: 768px)">
+										<img src="/images/bann1.png" alt="">
+									</picture>
+								</div>
+								<a href="https://github.com/LoveDero81" class="swiper-slide">
+									<img src="/images/bann2.png" alt=""/>
+								</a>
+								<div class="swiper-slide">
+									<img src="/images/bann3.png" alt=""/>
+								</div>
+							</div>
+						</div>
+						<button class="button button_size_icon button_style_outline hide-mobile prev">
+							<img src="/images/a-left.svg" alt=""/>
+						</button>
+						<button class="button button_size_icon button_style_outline hide-mobile next">
+							<img src="/images/a-right.svg" alt=""/>
+						</button>
+					</div>
+					<div class="advantages-section__info-block__additional">
+						<div class="advantages-section__info-block__additional__wrapper">
+                <span class="advantages-section__info-block__additional__head">
+                  Календарь
+                </span>
+							<span class="advantages-section__info-block__additional__description">
+                  Узнай, какой процент скидок ждет тебя в этом месяце!
+                </span>
+							<img src="/images/calendar.png" alt=""/>
+						</div>
+						<div class="advantages-section__info-block__additional__wrapper">
+                <span class="advantages-section__info-block__additional__head">
+                  Бонусная программа
+                </span>
+							<span class="advantages-section__info-block__additional__description">
+                  Увеличивай процент кешбека и копи баллы с покупок!
+                </span>
+							<img src="/images/advantages-add-2.png" alt=""/>
+						</div>
+						<div class="advantages-section__info-block__additional__wrapper">
+                <span class="advantages-section__info-block__additional__head">
+                  Магазины
+                </span>
+							<span class="advantages-section__info-block__additional__description">
+                  Карта магазинов в твоем городе и данные для связи
+                </span>
+							<img src="/images/advantages-add-3.png" alt=""/>
+						</div>
+						<div class="advantages-section__info-block__additional__wrapper">
+                <span class="advantages-section__info-block__additional__head">
+                  Помощь
+                </span>
+							<span class="advantages-section__info-block__additional__description">
+                  Важная информация о магазинах и ответы на ваши вопросы.
+                </span>
+							<img src="/images/advantages-add-4.png" alt=""/>
+						</div>
+						<div class="advantages-section__info-block__additional__wrapper">
+                <span class="advantages-section__info-block__additional__head">
+                  Получить 300 ₽
+                </span>
+							<span class="advantages-section__info-block__additional__description">
+                  Работает, если ты еще не совершал(а) покупки.
+                </span>
+							<img src="/images/advantages-add-5.png" alt=""/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="pv-60">
+		<div class="new-product-section">
+			<div class="new-product-section__container container">
+				<div class="new-product-section__head">
+					<div class="new-product-section__head__title">Новинки</div>
+					<div class="new-product-section__head__additional">
+						<a href="#">Все товары</a>
+					</div>
+				</div>
+				<div class="new-product-section__info-block">
+					{{> ProductCard }}
+					{{> ProductCard }}
+					{{> ProductCard }}
+					{{> ProductCard }}
+					{{> ProductCard }}
+				</div>
+			</div>
+		</div>
+	</section>
+
+	{{> TheBanner }}
+
+	<section class="pv-60">
+		<div class="products-home-section">
+			<div class="products-home-section__container container">
+				<div class="products-home-section__info-block">
+					{{> ProductCard }}
+					{{> ProductCard }}
+					{{> ProductCard }}
+					{{> ProductCard }}
+					{{> ProductCard }}
+					{{> ProductCard }}
+					{{> ProductCard }}
+					{{> ProductCard }}
+					{{> ProductCard }}
+					{{> ProductCard }}
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="pv-60">
+		<div class="brands-section">
+			<div class="brands-section_container container">
+				<div class="brands-section__slider">
+					<div class="swiper brandsSlider">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"><img src="/images/brands/brand1.png" alt=""></div>
+							<div class="swiper-slide"><img src="/images/brands/brand2.png" alt=""></div>
+							<div class="swiper-slide"><img src="/images/brands/brand3.png" alt=""></div>
+							<div class="swiper-slide"><img src="/images/brands/brand4.png" alt=""></div>
+							<div class="swiper-slide"><img src="/images/brands/brand5.png" alt=""></div>
+							<div class="swiper-slide"><img src="/images/brands/brand5.png" alt=""></div>
+						</div>
+					</div>
+					<button class="button button_size_icon button_style_outline hide-mobile prev"><img src="/images/a-left.svg"
+					                                                                       alt=""></button>
+					<button class="button button_size_icon button_style_outline hide-mobile next"><img src="/images/a-right.svg"
+					                                                                       alt=""></button>
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
+
+{{> TheFooter}}
+{{> TheBot }}
